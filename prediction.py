@@ -15,4 +15,5 @@ def get_prediction(data,model):
     """
     Predict the class of a given data point.
     """
+    model = joblib.load('extree.joblib')
     return model.predict(data)
